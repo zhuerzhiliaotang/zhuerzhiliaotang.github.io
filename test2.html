@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<!--引入jQuery-->
+	<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+
+	<script type="text/javascript">
+	//通过js代码，去改变我们的网页，添加节点
+		$(function(){
+			var goodInfo = '<div class="good">';//js中的div节点
+			goodInfo += '<div class="goodImg">';
+			goodInfo += '<img src="http://omsproductionimg.yangkeduo.com/images/2018-06-11/88998463afb91e4c62058dab0a19ab2e.jpeg" />';
+			goodInfo += '</div>';
+			goodInfo += '<div class="goodText">';
+			goodInfo += '<p>跳舞毯双人无线体感发光电视专用接口跳舞机家用抖音跑步游戏机</p>';
+			goodInfo += '<p>￥99(￥599)   已团53件</p>';
+			goodInfo += '</div>';
+
+			$("body").append(goodInfo);//将js中创建的div节点，放置在body里面
+		})
+	</script>
+
+
+
+	<style type="text/css">
+		.good{
+			width: 300px;
+			height: 400px;
+
+			margin-right: 20px;
+			float:left;
+		}
+
+		.goodImg{
+			width: 300px;
+			height: 300px;
+		}
+
+		.goodImg img{
+			width: 300px;
+			height: 300px;
+		}
+
+		.goodText{
+			width: 300px;
+			height: 100px;
+		}
+	</style>
+</head>
+<body>
+	<div class="good">
+		<div class="goodImg">
+			<img src="http://omsproductionimg.yangkeduo.com/images/2018-06-11/88998463afb91e4c62058dab0a19ab2e.jpeg" />
+		</div>
+		<div class="goodText">
+			<p>跳舞毯双人无线体感发光电视专用接口跳舞机家用抖音跑步游戏机</p>
+			<p>￥99(￥599)   已团53件</p>
+		</div>
+	</div>
+</body>
+</html>
